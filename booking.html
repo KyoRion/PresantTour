@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<!-- Linked file |  If you want know more please open LINK_INCLUDE.txt in folder. -->
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Pleasant Tour</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid padding bg-img">
+			<div class="row welcome text-center">
+				<div class="col-12">
+					<br>
+					<h1 class="display-4">BOOKING</h1>
+					<br>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid padding">
+		<div class="container-fluid padding ">
+			<div class="row jumbotron" align="center">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<form name="formorder" oninput="price_adult.value = parseInt(product.value) * parseInt(quantity_adult.value);
+									price_children.value = parseInt(product.value) * parseInt(quantity_children.value) / 2;
+									txtPayment.value = parseInt(price_adult.value) + parseInt(price_children.value);
+					 " class="col-12 form-contact" action="#">
+						<div class="form-group">
+							<label for="usr"><span style="font-weight: bold; color: #4c4c4c;">Name:</span></label>
+							<input type="text" name="fullname" class="form-control" id="usr" placeholder="Pleasant Tour" required>
+							<label for="email"><span style="font-weight: bold; color: #4c4c4c;">E-mail:</span></label>
+							<input type="email" name="email" class="form-control" id="email" placeholder="pleasanttour@gmail.com" required>
+							<label for="tel"><span style="font-weight: bold; color: #4c4c4c;">Phone:</span></label>
+							<input type="text" name="tel" class="form-control" id="tel" placeholder="+8412345678" required>
+							<br>
+							<label style="width: 110px;" for="tel"><span style="font-weight: bold; color: #4c4c4c;">Gender :</span></label>
+							<select name="gender" required>
+										<option value="Null">Select...</option>
+										<option value="Mr">Male</option>
+										<option value="Ms">Female</option>
+							</select>
+							<label style="width: 70px;" for="product"><span style="font-weight: bold; color: #4c4c4c;">Tours:</span></label>
+							<select name="product">
+										<option value="Null">Select...</option>
+										<option value="300">Beach - PHU QUOC Island (300$/person)</option>
+										<option value="450">Beach - CON DAO Island (450$/person)</option>
+										<option value="300">Palaces - HA NOI Capital (300$/person)</option>
+										<option value="400">Palaces - HUE Monuments (400$/person)</option>
+										<option value="500">Palaces - NINH BINH Province (500$/person)</option>
+										<option value="550">Hill Station - BA NA Hill (450$/person)</option>
+										<option value="450">Hill Station - SAPA (550$/person)</option>
+							</select>
+							<br>
+							<label style="width: 110px;" for="quantity_adult"><span style="font-weight: bold; color: #4c4c4c;">Adult QTY :</span></label>
+							<input class="input_number_payment" type="number" id="numberval" name="quantity_adult" min="1" max="999" value="0">
+							<output class="pricehide" name="price_adult" for="product quantity_adult"></output>
+							<br>
+							<label style="width: 110px;" for="quantity_children"><span style="font-weight: bold; color: #4c4c4c;">Kids QTY : </span></label>
+							<input class="input_number_payment" type="number" id="numberval" name="quantity_children" min="1" max="999" value="0">
+							<output class="pricehide" name="price_children" for="product quantity_children"></output>
+							<br>
+							<label style="width: 110px;"><span style="font-weight: bold; color: #4c4c4c;">Total Price: </span></label>
+							<span style="color: red;">$&nbsp<output name="txtPayment" for="price_adult price_children"></output></span>
+							<div class="note_warning">
+								<h2>WARNING</h2>
+								<p>Adult = 100% cost ticket</p>
+								<p>Children = 50% cost ticket</p>
+								<p>When buy ticket will don't return again.</p>
+								<p style="font-weight: bold; color: blue;">Thank you for contacting us regarding our current products.</p>
+							</div>
+							<input class="cofirm" type="checkbox" name="confirm"/>&nbsp;<span>Are you sure with your options?</span>
+							<div class="btn_form_contact">
+								<button type="reset" class="btn btn-outline-secondary btn-lg">Reset</button>
+								<button type="button" class="btn btn-warning btn-lg" onclick="checkForm(form); ">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

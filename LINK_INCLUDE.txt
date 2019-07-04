@@ -1,0 +1,18 @@
+﻿https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css ---- bootstrap 4 CDN
+https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js --------- jquery CDN
+https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js  popper CDN (*Bootstrap 4*)
+https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js ------ Bootstrap script 4 CDN
+https://use.fontawesome.com/releases/v5.0.8/js/all.js -------------------- Fontawesome
+
+
+******* Giải thích về class col *********
+
+Trong bootstrap sẽ có 4 loại màn hình chính
+
+1. là màn hình xs dành cho điện thoại (<576px)
+2. là màn hình sm dành cho tablets (<576px)
+3. là màn hình md dành cho máy tính (<768px)
+4. là màn hình lg dành cho màn hình lớn widescreens (<992px)6:27 CH 20/11/2018
+5. là màn hình xl dành cho màn hình lớn hơn (<1200px)
+
+*****************************************

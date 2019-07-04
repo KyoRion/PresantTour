@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<!-- Linked file |  If you want know more please open LINK_INCLUDE.txt in folder. -->
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Pleasant Tour</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="js/main.js"></script>
+
+
+	</head>
+	<body>
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-md sticky-top">
+			<div class="container-fluid">
+				<a href="index.html"><img class="navbar-brand" src="images/logo-blue.png" alt="LOGO PLEASANT TOUR" width="110" height="80"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html" target="_self">HOME</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll" href="#about" target="_self">ABOUT</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll" href="#tour" id="listitemdrop">OUR TOUR</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll" href="#gallery" id="listitemdrop">GALLERY</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll" href="#contact">CONTACT</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div id="about" ></div>
+
+	<!-- ######################################################################################### -->
+		<!-- About content -->
+
+		<div class="container-fluid padding info-padding-top" align="justify">
+			<hr size="15">
+			<div class="row padding">
+				<div class="col-lg-6 display-about">
+					<h2>ABOUT MY TEAM</h2>
+					<h3>OUR VISION</h3>
+					<p><b>PLEASANT TOUR</b> was established November 17, 2008. We are a company active in the field of tourism in Vietnam. With over <b>10 years</b> of establishment and development, <b>PLEASANT TOUR</b> is aiming to become one of the top 10 travel groups in Asia and a multinational company by 2020.</p>
+					<h3>OUR MISSION</h3>
+					<p>Bring the feelings of excitement to visitors in each trip - This is the goal and mission <b>PLEASANT TOUR</b> commitment and effort to bring visitors. <b>PLEASANT TOUR</b> becomes a travel companion with visitors on all travel itineraries and create good values.</p>
+					<h3>BUSINESS PHILOSOPHY</h3>
+					<p id="tour">Customer is the center we are always affirmed the customer is the center of all business activities that <b>PLEASANT TOUR</b> aimed at, because the customer is a great contribution to build the brand <b>PLEASANT TOUR</b>.</p>
+				</div>
+				<div class="col-lg-6" align="center">
+					<img src="images/about.png" width="600" height="500">
+				</div>
+			</div>
+		</div>
+		<hr class="my-4">
+	<!-- ######################################################################################### -->
+		<!-- Tourist content -->
+
+		<div class="container-fluid padding bg-img">
+			<div class="row welcome text-center">
+				<div class="col-12">
+					<h1 class="display-4">TOUR FOR HOMES</h1>
+				</div>
+				<hr>
+				<div class="col-12">
+					<a href="download/PriceList.docx"><button class="fun" id="btn_download_price">DOWNLOAD <br> PRICE LIST OF TOUR</button></a>
+					<p class="lead" >If you want to relax after study or working hard, travelling to another places will be a perfect choice for you. Let's choice and travel now.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- BUTTON -->
+
+		<div class="btn-center bg-imgun">
+			<button class="fun" data-toggle="collapse" data-target="#beachtour" id="btnst_beach" onclick="swaptext_beach()">BEACH</button>
+			<button class="fun" data-toggle="collapse" data-target="#palaces" id="btnst_palaces" onclick="swaptext_palaces()">PALACES</button>
+			<button class="fun" data-toggle="collapse" data-target="#hillstation" id="btnst_hill" onclick="swaptext_hill()">HILL STATION</button>
+			
+		</div>		<!-- Trigger the modal with a button -->
+
+		<!-- BEACH TOUR EDIT -->
+
+		<div id="beachtour" class="collapse bg-img">
+			<div class="container-fluid padding">
+				<div class="row welcome text-center padding">
+					<div class="col-12">
+						<h1 class="display-4">BEACH TOUR</h1>
+						<div align="center">
+							<h5 class="lead">Find a Beach trip that explores Vietnam. Vietnam is now a wonderful place for a beach holiday.</h5>
+						</div>
+						<hr class="centerline">
+					</div>
+
+		<!--Phu Quoc Island Tour-->
+
+					<div class="col-md-6 card-padding">
+						<div class="card" align="center">
+							<a href="#" data-toggle="modal" data-target="#Modal_PhuQuoc"><img class="card-imd-top" src="images/PhuQuoc.jpg" width="600" height="350"></a>
+							<div class="card-body">
+								<h4 class="card-title">PHU QUOC ISLAND</h4>
+								<p class="card-text">A Pearl of Vietnamese</p>
+								<a href="#" class="btn btn-outline-info" data-toggle="modal" data-target="#Modal_PhuQuoc">VIEW MORE</a>
+								<a href="booking.html" target="_blank" class="btn btn-warning">BOOK NOW</a>
+								<h5 class="price">Dollar: $300</h5>
+							</div>
+						</div>
+					</div>
+
+			<!--Modal Phu Quoc Island ID-->
+				<div class="modal fade" id="Modal_PhuQuoc" role="dialog">
+					<div class="modal-dialog modal-lg">
+						
+						<!-- Modal Phu Quoc Island Content -->
+
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" title="Close">&times;</button>
+								<h4 class="modal-title">PHU QUOC ISLAND</h4>						
+							</div>
+							<div class="modal-footer">
+								<a href="download/PhuQuoc.docx"><button type="button" class="btn btn-primary" title="Download file for Phu Quoc Island">DOWNLOAD</button></a>
+								<a href="booking.html" target="_blank"><button type="button" class="btn btn-warning" title="Booking tour !">BOOK NOW</button></a>
+							</div>
+							<div class="modal-body-tour">
+								<h4><img src="images/day1.jpg" width="50" height="50" title="DAY 1"></h4>
+								
+								<p><b>Suoi Tranh(waterfall for rain season only):</b> A stroll along the shaded forest path you reach what is the islands largest string of waterfalls and rock pools, also a good place for a swim under falls are flowing.</p>
+								
+								<p><b>Ham Ninh Fishing Village:</b> where you will find a jetty that extends a couple hundred meters out to sea to allow for the shallow waters along the coast and  village is predominantly involved in fishing  that provide an excellent source of seafood.</p>
+
+								<p><b>Pepper Farm:</b> Visit local pepper garden & meet the family who introduce about the harvesting of pepper – that is use around the world in everyone kitchen.</p>
+
+								<h4><img src="images/day2.jpg" width="50" height="50" title="DAY 2"></h4>
+								
+								<p><b>Pearl Farm:</b> Experience the beauty and allure of pearls which across centuries and cultures have long been associated with wealth, royalty and glamour”. The place you can find out procedures of pearl production.</p>
+								
+								<p><b>Phu Quoc Prison:</b> is a prison in Phu Quoc, It is ranked a special historical relic of national importance by the government of Vietnam. The most famous site in this prison is “tiger’s cage” . The prison covers an area of 40,000 square metres. The prison was closed after the country united and just opened for visitors later.</p>
+								
+								<h4 align="left"><img src="images/day3.jpg" width="50" height="50" title="DAY 3"></h4>
+								
+								<p align="left">When ready and as your scheduled flight allows, check out of your hotel and we’ll take you to the airport in time for your flight. </p>
+								
+								<p><b>End of Tour.</b></p>
+								</div>
+							<div>
+								<p align="center" style="font-weight: bold; color: red;">Please Click Download for detail schedule and more visit place.</p>
+							</div>
+							<div class="modal-footer">
+								<a href="download/PhuQuoc.docx"><button type="button" class="btn btn-primary" title="Download file for Phu Quoc Island">DOWNLOAD</button></a>
+								<a href="booking.html" target="_blank"><button type="button" class="btn btn-warning" title="Booking tour !">BOOK NOW</button></a>
+							</div>
+						</div>
+					</div>
+				</div> <!--END Modal Phu Quoc Island Content -->
+		<!--END Phu Quoc Island Tour EDIT-->
+
+		<!-- CON DAO Island Tour -->
+					
+					<div class="col-md-6 card-padding">
+						<div class="card" align="center">
+							<div class="newproduct">
+								<p>NEW</p>
+							</div>
+							<a href="#" data-toggle="modal" data-target="#Modal_ConDao"><img class="card-imd-top" src="images/ConDao.jpg" width="600" height="350"></a>
+							<div class="card-body">
+								<h4 class="card-title">CON DAO ISLAND</h4>
+								<p class="card-text">A Nature of Vietnamese</p>
+								<a href="#" class="btn btn-outline-info" data-toggle="modal" data-target="#Modal_ConDao">VIEW MORE</a>
+								<a href="booking.html" target="_blank" class="btn btn-warning">BOOK NOW</a>
+								<h5 class="price">Dollar: $450</h5>
+							</div>
+						</div>
+					</div>
+
+		<!--Modal Con Dao Island ID -->
+				<div class="modal fade" id="Modal_ConDao" role="dialog">
+					<div class="modal-dialog modal-lg">
+						
+						<!-- Modal Con Dao Island Content -->
+
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" title="Close">&times;</button>
+								<h4 class="modal-title">CON DAO ISLAND</h4>						
+							</div>
+							<div class="modal-footer">
+								<a href="download/ConDao.docx"><button type="button" class="btn btn-primary" title="Download file for Con Dao Island">DOWNLOAD</button></a>
+								<a href="booking.html" target="_blank"><button type="button" class="btn btn-warning" title="Booking tour !">BOOK NOW</button></a>
+							</div>
+							<div class="modal-body-tour">
+								<h4><img src="images/day1.jpg" width="50" height="50" title="DAY 1"></h4>
+								
+								<p><b>In the afternoon</b> we will spend time to discover the Mount A Temple – Con Dao TT views from a height of 50m. Next, we will visit Ban Dam, through the following localities: Nose, stone ground white shark, beach Cowardly , Peak love. Finally return hotel for a leisure or swimming time on beach. Dinner and overnight in Con Dao. </p>
+								
+								<h4><img src="images/day2.jpg" width="50" height="50" title="DAY 2"></h4>
+
+								<p><b>Dam Trau Beach</b> is known for its long, sandy shoreline and beautiful, clear water. Although it is located just behind the Con Son airport, this won't keep you from enjoying the peace and tranquility offered by this unique spot. Since it is located on an island, it's best to spend some time staying there and taking a day trip (or longer) to one of the best beaches in Vietnam.</p>
+
+								<p><b>Tre Lon Island and Tre Nho Islet</b> Tre Lon Island, known as Big Bamboo Island, is the second popular place that sea turtles gather to lay eggs. Besides that, there is the other marine life, such as snails, giant clams, and reef fish. Alternatively, you can visit Tre Nho Islet or Small Bamboo Island to see many birds nesting ground.</p>
+
+								<h4 align="left"><img src="images/day3.jpg" width="50" height="50" title="DAY 3"></h4>
+
+								<p align="left">When ready and as your scheduled flight allows, check out of your hotel and we’ll take you to the airport in time for your flight. </p>
+
+								<p><b>End of Tour.</b></p>
+								</div>
+							<div>
+								<p align="center" style="font-weight: bold; color: red;">Please Click Download for detail schedule and more visit place.</p>
+							</div>
+							<div class="modal-footer">
+								<a href="download/ConDao.docx"><button type="button" class="btn btn-primary" title="Download file for Con Dao Island">DOWNLOAD</button></a>
+								<a href="booking.html" target="_blank"><button type="button" class="btn btn-warning" title="Booking tour !">BOOK NOW</button></a>
+							</div>
+						</div>
+					</div>
+				</div> <!--END Modal Con Dao Island Content-->
+		<!--END Con Dao Island Tour-->
+				</div>
+			</div>
+		</div> <!--END BEACH TOUR -->
+
+	<!-- ######################################################################################### -->
+
+		<!-- PALACES TOUR EDIT -->
+
+		<div id="palaces" class="collapse bg-img">
+			<div class="container-fluid padding">
+				<div class="row welcome text-center padding">
+					<div class="col-12">
+						<h1 class="display-4">PALACES TOUR</h1>
+						<div align="center">
+							<h5 class="lead">Find a Beach trip that explores Vietnam. Vietnam is now a wonderful place for a beach holiday.</h5>
+						</div>
+						<hr class="centerline">
+					</div>
+		<!--HA NOI CAPITAL Tour-->
+					
+					<div class="col-md-4 card-padding">
+						<div class="card" align="center">
+							<a href="#" data-toggle="modal" data-target="#Modal_HaNoi"><img class="card-imd-top" src="images/HaNoi.jpg" width="400" height="270"></a>
+							<div class="card-body">
+								<h4 class="card-title">HA NOI CAPITAL</h4>
+								<p class="card-text">One of the major economic, cultural and political centers of Vietnam.</p>
+								<a href="#" class="btn btn-outline-info" data-toggle="modal" data-target="#Modal_HaNoi">VIEW MORE</a>
+								<a href="booking.html" target="_blank" class="btn btn-warning">BOOK NOW</a>
+								<h5 class="price">Dollar: $300</h5>
+							</div>
+						</div>
+					</div>
+
+			<!--Modal Ha Noi Capital ID -->
+				<div class="modal fade" id="Modal_HaNoi" role="dialog">
+					<div class="modal-dialog modal-lg">
+						
+						<!-- Modal Ha Noi Capital Content -->
+
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" title="Close">&times;</button>
+								<h4 class="modal-title">HA NOI CAPITAL</h4>						
+							</div>
+							<div class="modal-footer">
+								<a href="download/HaNoi.docx"><button type="button" class="btn btn-primary" title="Download file for Ha Noi Capital">DOWNLOAD</button></a>
+								<a href="booking.html" target="_blank"><button type="button" class="btn btn-warning" title="Booking tour !">BOOK NOW</button></a>
+							</div>
+							<div class="modal-body-tour">
+								<h4><img src="images/day1.jpg" width="50" height="50" title="DAY 1"></h4>
+								
+								<p><b>Hoan Kiem Lake, the Red Bridge, and Ngoc Son Temple</b> The lake has its own story behind the name Hoan Kiem Lake. Legend has it that a friend of King Le Loi found a shining metal bar when he went fishing. When this was shown to the King, he transformed the metal bar into a sword to use during battle. The King noticed that the sides of the bar had two words engraved saying “Thuan Thien” meaning “Harmonious with Heaven.” The King used this sword during his battle and won the peace. One year after winning the war and the King was riding on a Dragon boat at the lake, at that time, a golden tortoise surfaced and asked for the return of the sword. The King and the tortoise met at the center of the lake. The King threw the sword at the tortoise, who immediately grabbed the sword and went under water and was never seen again. From then the lake has become known as Hoan Kiem Lake meaning the “return of the sword lake.</p>
+								
+								<p><b>Flag Tower of Hanoi</b> Completed in 1812, Hanoi Flag Tower is one of the symbols of Hanoi. During the period between 1894 and 1897, the majority of Thang Long Imperial Citadel was destroyed by the French, but the Flag Tower is one of the remaining architecture that still works until now. Moreover, it is interesting to note that the Bank of Vietnam issued paper money the image of the Flag Tower on October 10th, 1954 - the Capital liberation day.</p>
+
+								<h4><img src="images/day2.jpg" width="50" height="50" title="DAY 2"></h4>
+								
+								<p><b>Hoa Lo Museum</b> Hoa Lo Prison or the Hanoi Hilton was the prison used during the French Colonization and the Vietnam War. Built by the French in 1896, it was utilized to hold the political prisoners over the period of the First Indochina War. During the Vietnam War, Hoa Lo was infamous as the incarceration for downed US pilots, who ironically nick-named it the Hanoi Hilton.</p>
+
+								<p><b>Ho Chi Minh Mausoleum</b> The Ho Chi Minh Mausoleum dates back to 1975, and it offers a close and personal look at the sarcophagus of Ho Chi Minh himself. Plus, you'll also get a chance to see the Ho Chi Minh Museum, Ho Chi Minh’s Stilt House, and the One Pillar Pagoda all in the same complex.</p>
+								
+								<p><b>Thang Long Water Puppet Theater</b>Water Puppet Performance is a Vietnamese traditional art date back the 11th century in the villages of the Red River Delta area, in Northern Vietnam.</p>
+
+								<h4 align="left"><img src="images/day3.jpg" width="50" height="50" title="DAY 3"></h4>
+								
+								<p align="left">When ready and as your scheduled flight allows, check out of your hotel and we’ll take you to the airport in time for your flight. </p>
+								
+								<p><b>End of Tour.</b></p>
+								</div>
+							<div>
+								<p align="center" style="font-weight: bold; color: red;">Please Click Download for detail schedule and more visit place.</p>
+							</div>
+							<div class="modal-footer">
+								<a href="download/HaNoi.docx"><button type="button" class="btn btn-primary" title="Download file for Ha Noi Capital">DOWNLOAD</button></a>
+								<a href="booking.html" target="_blank"><button type="button" class="btn btn-warning" title="Booking tour !">BOOK NOW</button></a>
+							</div>
+						</div> <!--END Modal Ha Noi Content-->
+					</div>
+				</div> <!--END Modal Ha Noi Capital ID -->
+		<!--END Ha Noi Capital Tour-->
+
+		<!-- Hue Monuments Tour -->
+					
+					<div class="col-md-4 card-padding">
+						<div class="card" align="center">
+							<div class="newproduct">
+								<p>NEW</p>
+							</div>
+							<a href="#" data-toggle="modal" data-target="#Modal_Hue"><img class="card-imd-top" src="images/Hue.jpg" width="400" height="270"></a>
+							<div class="card-body">
+								<h4 class="card-title">HUE MONUMENTS</h4>
+								<p class="card-text">An ancient capital, a world heritage site and architecture, culture and art are very unique.</p>
+								<a href="#" class="btn btn-outline-info" data-toggle="modal" data-target="#Modal_Hue">VIEW MORE</a>
+								<a href="booking.html" target="_blank" class="btn btn-warning">BOOK NOW</a>
+								<h5 class="price">Dollar: $400</h5>
+							</div>
+						</div>
+					</div>
+
+		<!--Modal Hue Monuments ID-->
+				<div class="modal fade" id="Modal_Hue" role="dialog">
+					<div class="modal-dialog modal-lg">
+						
+						<!-- Modal Hue Monuments Content-->
+
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" title="Close">&times;</button>
+								<h4 class="modal-title">HUE MONUMENTS</h4>						
+							</div>
+							<div class="modal-footer">
+								<a href="download/Hue.docx"><button type="button" class="btn btn-primary" title="Download file for Hue Monuments">DOWNLOAD</button></a>
+								<a href="booking.html" target="_blank"><button type="button" class="btn btn-warning" title="Booking tour !">BOOK NOW</button></a>
+							</div>
+							<div class="modal-body-tour">
+								<h4><img src="images/day1.jpg" width="50" height="50" title="DAY 1"></h4>
+								
+								<p><b>Royal Tombs</b> Another great way to get a taste of the culture is by visiting a few of the tombs surrounding Hue, Vietnam. While there are seven to choose from, popular tombs are the tombs of Minh Mang, Tu Duc, Khai Dinh, and Dong Khanh.</p>
+								
+								<p><b>Tu Duc's tomb</b> located 5km south of Hue, has expansive grounds, so if you want to see it all then be prepared to set plenty of time aside. Although, you won't be seeing the tomb where Tu Duc was laid to rest, as he was buried in a secret location somewhere in Hue.</p>
+
+								<p><b>The tomb of Khai Dinh </b> is different from what you might expect, especially if you visit it after checking out Hue's other tombs. It has a mixture of Vietnamese and European architecture, due to the Emperor Khai Dinh's close association with France.</p>
+
+								<h4><img src="images/day2.jpg" width="50" height="50" title="DAY 2"></h4>
+								
+								<p><b>Hue Imperial Citadel</b> Famously being one of Vietnam’s seven <b>UNESCO World Heritage Sites</b>, the Imperial City of Hue has long been a must-see attraction for tourists visiting a hidden charm of Vietnam. The Imperial City of Hue was actually a walled fortress and palace belonged to the ancient city of Hue which was a capital city of the Nguyen Dynasty for 140 years date back from 1805 until 1945.</p>
+								
+								<p><b>Boat Ride on the Song Huong River</b>During the autumn, the flower orchards around the river fall into the water, giving it a perfume-like aroma. Hence it is also known as the Perfume River. Enjoy a guided ride on a boat along the river for some scenic views of Hue.</p>
+								
+								<p><b>Lang Co Beach</b>Lang Co is a good stop-by beach with a majestic view if you are ever on your way from Hue to Hoi An. You can enjoy a BBQ seafood lunch at one of the beachside shack cafes. Due to different tides level, it is not recommended that you go for a swim, but the view is scenic.</p>
+								
+								<h4 align="left"><img src="images/day3.jpg" width="50" height="50" title="DAY 3"></h4>
+								
+								<p align="left">When ready and as your scheduled flight allows, check out of your hotel and we’ll take you to the airport in time for your flight. </p>
+								
+								<p><b>End of Tour.</b></p>
+								</div>
+							<div>
+								<p align="center" style="font-weight: bold; color: red;">Please Click Download for detail schedule and more visit place.</p>
+							</div>
+							<div class="modal-footer">
+								<a href="download/Hue.docx"><button type="button" class="btn btn-primary" title="Download file for Hue Monuments">DOWNLOAD</button></a>
+								<a href="booking.html" target="_blank"><button type="button" class="btn btn-warning" title="Booking tour !">BOOK NOW</button></a>
+							</div>
+						</div> <!--END Modal Hue Monuments Content-->
+					</div>
+				</div> <!--END Modal Hue Monuments ID -->
+		<!--END HUE MONUMENTS Tour-->
+
+		<!-- NINH BINH Tour -->
+					
+					<div class="col-md-4 card-padding">
+						<div class="card" align="center">
+							<div class="newproduct">
+								<p>NEW</p>
+							</div>
+							<a href="#" data-toggle="modal" data-target="#Modal_NinhBinh"><img class="card-imd-top" src="images/NinhBinh.jpg" width="400" height="270"></a>
+							<div class="card-body">
+								<h4 class="card-title">NINH BINH PROVINCE</h4>
+								<p class="card-text">The charming land of myth and unique landscapes.</p>
+								<a href="#" class="btn btn-outline-info" data-toggle="modal" data-target="#Modal_NinhBinh">VIEW MORE</a>
+								<a href="booking.html" target="_blank" class="btn btn-warning">BOOK NOW</a>
+								<h5 class="price">Dollar: $500</h5>
+							</div>
+						</div>
+					</div>
+
+		<!--Modal NINH BINH ID-->
+				<div class="modal fade" id="Modal_NinhBinh" role="dialog">
+					<div class="modal-dialog modal-lg">
+						
+						<!-- Modal NINH BINH Content-->
+
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" title="Close">&times;</button>
+								<h4 class="modal-title">NINH BINH PROVINCE</h4>						
+							</div>
+							<div class="modal-footer">
+								<a href="download/NinhBinh.docx"><button type="button" class="btn btn-primary" title="Download file for Ninh Binh Province">DOWNLOAD</button></a>
+								<a href="booking.html" target="_blank"><button type="button" class="btn btn-warning" title="Booking tour !">BOOK NOW</button></a>
+							</div>
+							<div class="modal-body-tour">
+								<h4><img src="images/day1.jpg" width="50" height="50" title="DAY 1"></h4>
+								
+								<p><b>Van Long Natural</b> Van Long Natural reserve is located in Gia Vien district, Ninh Binh province. Van Long is not only a natural reserve of wetlands but also the cultural relics. Van Long is a legendary land, a beautiful area and the largest natural reserve of wetlands. Here, guests will be seated on the boat to visit Van Long. A large space with spectacular mountain ranges creates a natural wall surrounded a vast expanse of water. With an area of 3000 hectares, Van Long natural reserve has 32 beautiful grotto such as: Ca Grotto, Bong Grotto, Rua Grotto, Chanh Grotto, each grotto has an unique beauty. The most beautiful grotto is Ca grotto in the Hoang Quyen Mountain. It has 250 meters length, 8 meters height and 10 meters width, the ceiling is stalactites with strange shapes like animal, fish.</p>
+								
+								<p><b>Trang An Landscape Complex</b> Trang An Landscape Complex contains three protected areas, including Hoa Lu Ancient Citadel Cultural – Historical Area; Trang An – Tam Coc – Bich Dong Scenic Area and Hoa Lu Special-Use Primary Forest.To the north and northwest of Trang An lie Bai Dinh karst hills; to the southwest and the south are Dong Tam – Son Ha and Tam Coc – Bich Dong karst ranges; to the southeast and northeast is Truong Yen karst range; to the  northeast  and  the north is Trang An karst range. </p>
+
+								<h4><img src="images/day2.jpg" width="50" height="50" title="DAY 2"></h4>
+								
+								<p><b>Tam Coc (The Three Grottoes)</b> The Tam Coc area is a highlight of any visit to Vietnam. Called “The Halong Bay of the Rice Fields” after the UNESCO World Heritage Site north of Hanoi, the stunning limestone karst towers hearken to the famed landscape of the bay, as well as Guilin in southern China — a landscape that has inspired poets for centuries. The karst towers of Tam Coc are set in wide lowland fields of wet rice, and visitors can experience a 1-hour boat ride along a meandering river. </p>
+								
+								<p><b>Hoa Lu: The Ancient Capital</b> This is the main palace area with Dinh, Le Temple is the center and this is where Dinh Tien Hoang built the nation. Before the palace, there has Ma Yen Mountain. Inside area belongs to Chi Phong Village, Truong Yen Commune which reared children and maids in the palace. The South (to the south, opposite and connect with outside area) is surrounded by high mountains and is guarded the back, from here, it can quickly withdraw by the water. In 1010, Ly Thai To moved the capital from Hoa Lu to Thang Long. Hoa Lu capital becomes ancient capital.</p>
+
+								<h4 align="left"><img src="images/day3.jpg" width="50" height="50" title="DAY 3"></h4>
+								
+								<p align="left">When ready and as your scheduled flight allows, check out of your hotel and we’ll take you to the airport in time for your flight. </p>
+								
+								<p><b>End of Tour.</b></p>
+								</div>
+							<div>
+								<p align="center" style="font-weight: bold; color: red;">Please Click Download for detail schedule and more visit place.</p>
+							</div>
+							<div class="modal-footer">
+								<a href="download/NinhBinh.docx"><button type="button" class="btn btn-primary" title="Download file for Ninh Binh Province">DOWNLOAD</button></a>
+								<a href="booking.html" target="_blank"><button type="button" class="btn btn-warning" title="Booking tour !">BOOK NOW</button></a>
+							</div>
+						</div> <!--END Modal NINH BINH Content-->
+					</div>
+				</div> <!--END Modal NINH BINH ID-->
+		<!--END NINH BINH Tour-->
+				</div>
+			</div>
+		</div> <!--END PALACES TOUR -->
+
+	<!-- ######################################################################################### -->
+
+		<!-- HILL STATION TOUR EDIT -->
+
+		<div id="hillstation" class="collapse bg-img">
+			<div class="container-fluid padding">
+				<div class="row welcome text-center padding">
+					<div class="col-12">
+						<h1 class="display-4">HILL STATION TOUR</h1>
+						<div align="center">
+							<h5 class="lead">Find a Beach trip that explores Vietnam. Vietnam is now a wonderful place for a beach holiday.</h5>
+						</div>
+						<hr class="centerline">
+					</div>
+
+		<!--BA NA HILL Tour-->
+					
+					<div class="col-md-6 card-padding">
+						<div class="card" align="center">
+							<a href="#" data-toggle="modal" data-target="#Modal_BaNa"><img class="card-imd-top" src="images/BaNa.jpg" width="600" height="350"></a>
+							<div class="card-body">
+								<h4 class="card-title">BA NA HILLS</h4>
+								<p class="card-text">Wonderland for everyone.</p>
+								<a href="#" class="btn btn-outline-info" data-toggle="modal" data-target="#Modal_BaNa">VIEW MORE</a>
+								<a href="booking.html" target="_blank" class="btn btn-warning">BOOK NOW</a>
+								<h5 class="price">Dollar: $450</h5>
+							</div>
+						</div>
+					</div>
+
+			<!--Modal BA NA HILLS ID -->
+				<div class="modal fade" id="Modal_BaNa" role="dialog">
+					<div class="modal-dialog modal-lg">
+						
+						<!-- Modal BA NA HILLS Content-->
+
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" title="Close">&times;</button>
+								<h4 class="modal-title">BA NA HILLS </h4>						
+							</div>
+							<div class="modal-footer">
+								<a href="download/BaNa.docx"><button type="button" class="btn btn-primary" title="Download file for Ba Na Hill">DOWNLOAD</button></a>
+								<a href="booking.html" target="_blank"><button type="button" class="btn btn-warning" title="Booking tour !">BOOK NOW</button></a>
+							</div>
+							<div class="modal-body-tour">
+								<h4><img src="images/day1.jpg" width="50" height="50" title="DAY 1"></h4>
+								
+								<p><b>Son Tra Peninsula</b> Considered as a hidden jewel of Da Nang, Son Tra Peninsula is definitely the place that you cannot miss. This Peninsula provides beautiful landscapes with different kinds of plants and animals. Its natural environment is an ideal destination a picnic or an adventurous journey through the pristine jungle.</p>
+								
+								<p><b>Marble Mountain (Ngu Hanh Son)</b> is a cluster of five hills, which are named after the 5 elements: Metal, Wood, Water, Fire, and Earth. A visit will bring you an adventure to explore the caves and temples in inside. Visitors can buy marble-made souvenirs like bracelets and necklaces at the bottom of the mountain.</p>
+
+								<p><span style="font-weight: bold;text-decoration: underline; color: red;">BA NA HILLS</span>
+								
+								<p><b>Cable car network</b>The cable car network of SunWorld Ba Na hills was ranked by CNN as one of the 10 most impressive cable car infrastructure systems worldwide, comprising 5 routes: Suoi Mo – Ba Na, Debay – Morin, Toc Tien Waterfall – L’Indochine, Hoi An – Marseille and Bordeaux – Louvre. Capacity may hit 6,500 passengers/hour and the manufacturer was Doppermayer.</p>
+								
+								<p><b>Linh Tu Pagoda of the Holy Mountain Mother</b> Nested in the convergence of the heaven and the earth, yin and yang, Linh Tu Pagoda of the Holy Mountain Mother is dedicated in homage of the Holy Mountain Mother who grants patronage to Ba Na. In addition to climbing the highest point of Danang (1,487m), pilgrims to this pagoda are all drenched in innermost peace and have their worldly greed and fear totally rid.</p>
+								
+								<p><b>Golden Bridge</b> A hot destination of Da Nang since August 2018, the Golden Bridge, or Cau Vang in Vietnamese, quickly caught global attention and was listed in TIME's Top Worlds Greatest Places 2018 Lifted by a mossy concrete hand 1,400 meter above sea level, stretching in an arch 148.6 meter long, 3 meter wide, with the handrail plated with gold, this giant brige has attracted many international and local visitors come to admire its amazing architecture as well as the majestic natural surrounding.</p>
+								
+								<p><b>French Village</b> at Sun World Ba Na Hills is a replica of classical and romantic France in our fantasy, through a string of peculiar architectural clusters: the square, cathedral, town, village and inns… Travelers to the French Village seemto jump the time machine and get carried back to the sophisticated and elegant life in one of the oldest countries of the world.</p>
+
+								<h4 align="left"><img src="images/day2.jpg" width="50" height="50" title="DAY 2"></h4>
+								
+								<p align="left">When ready and as your scheduled flight allows, check out of your hotel and we’ll take you to the airport in time for your flight. </p>
+								
+								<p><b>End of Tour.</b></p>
+								</div>
+							<div>
+								<p align="center" style="font-weight: bold; color: red;">Please Click Download for detail schedule and more visit place.</p>
+							</div>
+							<div class="modal-footer">
+								<a href="download/BaNa.docx"><button type="button" class="btn btn-primary" title="Download file for Ba Na Hill">DOWNLOAD</button></a>
+								<a href="booking.html" target="_blank"><button type="button" class="btn btn-warning" title="Booking tour !">BOOK NOW</button></a>
+							</div>
+						</div> <!--END Modal BA NA HILLS Content-->
+					</div>
+				</div> <!--END Modal BA NA HILLS ID-->
+		<!--END BA NA HILLS Tour-->
+
+		<!-- HILL SAPA Tour -->
+					
+					<div class="col-md-6 card-padding">
+						<div class="card" align="center">
+							<div class="newproduct">
+								<p>NEW</p>
+							</div>
+							<a href="#" data-toggle="modal" data-target="#Modal_SAPA"><img class="card-imd-top" src="images/SaPa.jpg" width="600" height="350"></a>
+							<div class="card-body">
+								<h4 class="card-title">SAPA</h4>
+								<p class="card-text">Hiking and enjoying nature is the name of the game in Sapa</p>
+								<a href="#" class="btn btn-outline-info" data-toggle="modal" data-target="#Modal_SAPA">VIEW MORE</a>
+								<a href="booking.html" target="_blank" class="btn btn-warning">BOOK NOW</a>
+								<h5 class="price">Dollar: $550</h5>
+							</div>
+						</div>
+					</div>
+
+		<!--Modal SAPA ID-->
+				<div class="modal fade" id="Modal_SAPA" role="dialog">
+					<div class="modal-dialog modal-lg">
+						
+						<!-- Modal SAPA Content -->
+
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" title="Close">&times;</button>
+								<h4 class="modal-title">SAPA</h4>						
+							</div>
+							<div class="modal-footer">
+								<a href="download/SAPA.docx"><button type="button" class="btn btn-primary" title="Download file for SAPA">DOWNLOAD</button></a>
+								<a href="booking.html" target="_blank"><button type="button" class="btn btn-warning" title="Booking tour !">BOOK NOW</button></a>
+							</div>
+							<div class="modal-body-tour">
+								<h4><img src="images/day1.jpg" width="50" height="50" title="DAY 1"></h4>
+								
+								<p><b>Fansipan Mountain – Indochina’s Highest Peak</b> Fansipan is the highest peak of Indochina with the height of 3,143 meters in the center of Hoang Lien Son Range. On your way to the summit, you will be amazed by nature with many kinds of species like Hoang Lien - a special medicinal ingredient, exotic woods, perdix, and Indochinese serow.</p>
+								
+								<p>From 2016 onward, there’s a cable car system open to transport visitors directly to the top of Fansipan. It is listed in <b>two Guinness records</b> for the greatest elevation difference by a <b>non-stop three-roped cable car of 1,410 meters</b> and the longest <b>non-stop three-roped cable car of 6,292.5 meters</b>. With this cable car system, you can reach the top in 15 minutes, but the prices aren’t low.</p>
+								
+								<p><b>Ham Rong Mountain </b>If you prefer a day hike in Sapa, Ham Rong Mountain or Dragon Mountain is a great option for you. From Sapa City, you can walk there on foot then it takes you another three hours to hike up and down the mountain, but you'll get to reward yourself with the beautiful scenery. From the top of the mountain, you can look out to Sapa, Muong Hoa Valley, or Ta Phin Village hidden in the milky white fog. On your way to the top, you can also take a break and take pictures of the colorful flower garden.</p>
+
+								<p><b>Sapa Heaven’s Gate</b> One of Hoang Lien Son range of mountain passes is Tram Ton. You should be able to find your way to Sapa Heaven’s Gate located at the top of Tram Ton pass. From the Heaven’s Gate looking down, beneath the thick cloud, you will see mountain roads packed with a line of cars submerged in various shades of green from the valley and the ethnic paddy, and at the far end lies the Silver Waterfall. You also get to see Fansipan Summit floating in the sky, standing on the edge of a seemingly bottomless cliff.</p>
+
+								<h4><img src="images/day2.jpg" width="50" height="50" title="DAY 2"></h4>
+								
+								<p><b>Sapa Holy Rosary Church</b> Sapa Holy Rosary Church was built in 1895 by the French reflecting Roman Gothic architecture. It has been preserved and reinforced recently to become one of the most iconic attractions of Sapa city. The daily masses are at 7 PM, and Sunday mass is at 9 AM.</p>
+								
+								<p><b>Ta Phin Village</b>At Ta Phin, you can still see the customs of Dao Do (Red Dao) ethnicity like the craft of the brocade and rice terraces. Inside the cave near Ta Phin, the water erosion has formed and changed the rocks into many shapes like a fairy or animals and the sparkling forest is created by emerald green crystalized dripstone.</p>
+								
+								<p><b>Hoang A Tuong Castle Architecture</b>  is a combination of Asian and European style. It was built in 1914 as a place for the Mong Ethnic King and his son, Hoang A Tuong. Recently, the castle has been repainted with a vivid color to remove the gloomy feeling of the old gray walls.</p>
+								
+								<h4 align="left"><img src="images/day3.jpg" width="50" height="50" title="DAY 3"></h4>
+								
+								<p align="left">When ready and as your scheduled flight allows, check out of your hotel and we’ll take you to the airport in time for your flight. </p>
+								
+								<p><b>End of Tour.</b></p>
+								</div>
+							<div>
+								<p align="center" style="font-weight: bold; color: red;">Please Click Download for detail schedule and more visit place.</p>
+							</div>
+							<div class="modal-footer">
+								<a href="download/SAPA.docx"><button type="button" class="btn btn-primary" title="Download file for SAPA">DOWNLOAD</button></a>
+								<a href="booking.html" target="_blank"><button type="button" class="btn btn-warning" title="Booking tour !">BOOK NOW</button></a>
+							</div>
+						</div> <!--END Modal SAPA Content -->
+					</div>
+				</div> <!--END Modal SAPA ID-->
+		<!--END SAPA Tour-->
+				</div>
+			</div>
+		</div> <!--END HILL STATION TOUR -->
+
+		<hr id="gallery" class="my-4">
+
+	<!-- ######################################################################################### -->
+<!-- OUR GALLERY -->
+<div class="container-fluid padding bg-img">
+			<div class="row welcome text-center">
+				<div class="col-12">
+					<h1 class="display-4">OUR GALLERY</h1>
+				</div>
+				<hr>
+			</div>
+		</div>
+
+		<div class="btn-center bg-imgun">
+			<button class="fun" data-toggle="collapse" data-target="#ourgallery" id="btnst_ourgallery" onclick="swaptext_ourgallery()">CLICK HERE</button>			
+		</div>		<!-- Trigger the modal with a button -->
+
+	<!-- ######################################################################################### -->
+
+		<!-- GALLERY -->
+
+		<div id="ourgallery" class="collapse bg-img">
+			<div class="container-fluid padding">
+				<div class="row welcome text-center padding">
+
+		<!--PHU QUOC ISLAND-->
+					
+					<div class="col-md-3 card-padding">
+						<div class="card" align="center">
+							<a href="gallery/phuquoc.html" target="_blank"><img class="card-imd-top" src="images/phuquoc/hamninh.jpg" width="270" height="170"></a>
+							<div class="card-body">
+								<h4 class="card-title">PHU QUOC</h4>
+							</div>
+						</div>
+					</div>
+
+		<!--END PHU QUOC ISLAND-->
+
+		<!-- CON DAO ISLAND -->
+					
+					<div class="col-md-3 card-padding">
+						<div class="card" align="center">
+							<a href="gallery/condao.html" target="_blank"><img class="card-imd-top" src="images/condao/lovoi.jpg" width="270" height="170"></a>
+							<div class="card-body">
+								<h4 class="card-title">CON DAO</h4>
+							</div>
+						</div>
+					</div>
+
+		<!--END CON DAO ISLAND-->
+
+		<!-- HA NOI CAPITAL -->
+					
+					<div class="col-md-3 card-padding">
+						<div class="card" align="center">
+							<a href="gallery/hanoi.html" target="_blank"><img class="card-imd-top" src="images/hanoi/flagtower.jpg" width="270" height="170"></a>
+							<div class="card-body">
+								<h4 class="card-title">HA NOI</h4>
+							</div>
+						</div>
+					</div>
+		<!--END HA NOI CAPITAL-->
+
+		<!-- HUE MONUMENTS -->
+					
+					<div class="col-md-3 card-padding">
+						<div class="card" align="center">
+							<a href="gallery/hue.html" target="_blank"><img class="card-imd-top" src="images/hue/hue1.jpg" width="270" height="170"></a>
+							<div class="card-body">
+								<h4 class="card-title">HUE</h4>
+							</div>
+						</div>
+					</div>
+		<!--END HUE MONUMENTS-->
+
+		<!-- NINH BINH PROVINCE -->
+					
+					<div class="col-md-4 card-padding">
+						<div class="card" align="center">
+							<a href="gallery/ninhbinh.html" target="_blank"><img class="card-imd-top" src="images/ninhbinh/ninhbinh1.jpg" width="350" height="200"></a>
+							<div class="card-body">
+								<h4 class="card-title">NINH BINH</h4>
+							</div>
+						</div>
+					</div>
+		<!--END NINH BINH PROVINCE-->
+
+		<!-- BA NA HILLS -->
+					
+					<div class="col-md-4 card-padding">
+						<div class="card" align="center">
+							<a href="gallery/bana.html" target="_blank"><img class="card-imd-top" src="images/bana/bana5.jpg" width="350" height="200"></a>
+							<div class="card-body">
+								<h4 class="card-title">BA NA</h4>
+							</div>
+						</div>
+					</div>
+		<!--END BA NA HILLS-->
+
+		<!-- SAPA -->
+					
+					<div class="col-md-4 card-padding">
+						<div class="card" align="center">
+							<a href="gallery/sapa.html" target="_blank"><img class="card-imd-top" src="images/sapa/sapa1.jpg" width="350" height="200"></a>
+							<div class="card-body">
+								<h4 class="card-title">SAPA</h4>
+							</div>
+						</div>
+					</div>
+		<!--END SAPA  Tour-->
+				</div>
+			</div>
+		</div> <!--END OUR GALLERY-->
+
+		<hr id="contact" class="my-4">
+
+	<!-- ######################################################################################### -->
+
+		<!-- Contact Us -->
+		<div class="container-fluid padding">
+			<div class="row jumbotron">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<h1 align="center" class="display-4">CONTACT &nbsp US</h1>
+					<div class="col-3 form-info-contact" align="justify">
+						<h2> GET IN TOUCH </h2>
+						<h5><span style="font-weight: bold; color: #4c4c4c;">E-mail:</span></h5> 
+							<p><span style="text-decoration: underline;color: blue;"><a href="mailto:pleasanttour@gmail.com?Subject=Customer%20Reviews" target="_top">pleasanttour@gmail.com</a></span></p>
+						<span style="font-weight: bold; color: #4c4c4c;">Phone:</span> 
+						<p> +84 8 39000000</p>
+						<span style="font-weight: bold; color: #4c4c4c;">Address:</span> 
+						<p> 590 Cach Mang Thang 8, HCMC, Vietnam</p>
+					</div>
+
+					<!-- Form ContactUs -->
+					<form class="col-9 form-contact" action="#">
+						<div class="form-group">
+							<label for="usr"><span style="font-weight: bold; color: #4c4c4c;">Name:</span></label>
+							<input type="text" class="form-control" id="usr" placeholder="Pleasant Tour" required>
+							<label for="email"><span style="font-weight: bold; color: #4c4c4c;">E-mail:</span></label>
+							<input type="email" class="form-control" id="email" placeholder="pleasanttour@gmail.com" required>
+							<label for="tel"><span style="font-weight: bold; color: #4c4c4c;">Phone:</span></label>
+							<input type="text" class="form-control" id="tel" placeholder="0123456789" required>
+							<label for="msg"><span style="font-weight: bold; color: #4c4c4c;">Message:</span><span title="Hold and drag icon // bottom right rectangular to resize ''Message''" style="color: red;">*</span>:</label>
+							<textarea class="form-control" rows="6" id="msg" placeholder="Your suggestion..." required></textarea>
+							<div class="btn_form_contact">
+								<button type="reset" class="btn btn-outline-secondary btn-lg">Reset</button>
+								<button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal_btn_contact">Submit</button>
+							</div>
+
+							<!--Modal Form ContactUs ID-->
+							<div class="modal fade" id="myModal_btn_contact" role="dialog">
+								<div class="modal-dialog modal-lg">
+									
+									<!-- Modal Form ContactUs -> Submit Content -->
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" title="Close">&times;</button>
+											<h4 class="modal-title">Message</h4>
+										</div>
+										<div class="modal-body-contact">
+											<p><b>PLEASANT TOUR</b> received your message.</p>
+											<p>Should you need any further information, please do not hesitate to contact us.</p>
+											<p><img src="images/thank.jpg"></p>
+										</div>
+									</div> <!--END  Modal Form ContactUs -> Submit Content -->
+								</div>
+							</div> <!--END Modal Form ContactUs ID-->
+						</div>
+					</form> <!--END Form ContactUs -->
+				</div>
+			</div>
+		</div> <!--END Contact Us -->
+
+		<hr class="my-4">
+	<!--###############################################-->
+
+	<!-- ######################################################################################### -->
+
+			<!-- Connect Social Network -->
+			<div class="cotainer-fluid padding card-padding">
+				<div class="row text-center padding">
+					<div class="col-12">
+						<h2 class="display-4">CONNECT</h2>
+					</div>
+					<div class="col-12 social padding">
+						<a href="#"><i class="fab fa-facebook"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-google-plus-g"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-youtube"></i></a>
+					</div>
+				</div>
+			</div> <!--END Connect Social Network -->
+
+	<!-- ######################################################################################### -->
+
+			<!-- Footer -->
+			<div class="colorbg">
+			<footer class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<div class="cotainer-fluid padding">
+					<div class="row">
+						<div class="col-md-6" align="left">
+							<br>
+							<hr class="light">
+							<br>
+							<!--OUR PARTNER-->
+							<div class="partner">
+								<div align="center">
+									<h2 class="content-partner">OUR PARTNER</h2>
+								</div>
+								<img class="imgp" src="images/ourpartner/saigontourist-logo.png" width="190" height="170">
+								<img class="imgp" src="images/ourpartner/viettravel-logo.png" width="190" height="170">
+								<img class="imgp" src="images/ourpartner/vietnamairline-logo.png" width="200" height="170">
+							</div> <!--END OUR PARTNER-->
+						</div>
+
+						<!--GOOGLE MAP-->
+						<div class="col-md-6" align="center">
+							<br>
+							<hr class="light">
+							<iframe id="maplocation" class="img-responsive img-thumbnail" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.6626580958668!2d106.66520265820785!3d10.786376998078707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed23c80767d%3A0x5a981a5efee9fd7d!2zNTkwIEPDoWNoIE3huqFuZyBUaMOhbmcgOCwgcGjGsOG7nW5nIDExLCBUw6JuIELDrG5oLCBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1520391560324"
+							width="150px" height="150px" frameborder="0" style="border:0" allowfullscreen>
+							</iframe>
+						</div> <!--END GOOGLE MAP-->
+
+						<!--Copyright-->
+						<div class="col-12 text-center">
+							<hr class="light-100">
+							<h4>&copy; Team E-Project 3</h4>
+						</div> <!--END Copyright-->
+					</div>
+				</div>
+			</footer>
+			</div> <!--END Footer -->
+		</body>
+	</html>
